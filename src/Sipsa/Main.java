@@ -27,11 +27,9 @@ public class Main {
 		presentacion = new Presentacion();
 		datos = new Datos();
 		
-<<<<<<< HEAD
-=======
 		departamento = datos.recuperarDepartamento(presentacion.capturarCodigoDaneDepartamento());
 		presentacion.presentarDepartamento(departamento);
->>>>>>> 3bd627d (recupera clase departamento)
+
 	}
 
 	public static void registrarMunicipio() {

@@ -15,6 +15,15 @@ public class Main {
 		departamento = presentacion.capturarDepartamento();
 		presentacion.presentarDepartamento(departamento);
 	}
+	
+	public static void consultarDepartamento() {
+		Departamento departamento;
+		Presentacion presentacion;
+		
+		presentacion = new Presentacion();
+		
+		presentacion.presentarDepartamento(departamento);
+	}
 
 	public static void registrarMunicipio() {
 		Municipio municipio;
@@ -25,4 +34,5 @@ public class Main {
 		municipio = presentacion.capturarMunicipio();
 		presentacion.presentarMunicipio(municipio);
 	}
+	
 }

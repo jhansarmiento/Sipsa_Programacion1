@@ -4,8 +4,11 @@ public class Jornada {
 	
 	private String fecha;
 	
+	private String codigo;
+	
 	public Jornada() {
 		this.fecha = "";
+		this.codigo = "";
 	}
 	
 	public void setFecha(String pFecha) {
@@ -14,7 +17,17 @@ public class Jornada {
 		}
 	}
 	
+	public void setCodigo(String pCodigo) {
+		if (pCodigo.length() > 0) {
+			this.codigo = pCodigo;
+		}
+	}
+	
 	public String getFecha() {
 		return this.fecha;
+	}
+	
+	public String getCodigo() {
+		return this.codigo;
 	}
 }

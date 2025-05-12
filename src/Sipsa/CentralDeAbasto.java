@@ -2,6 +2,8 @@ package Sipsa;
 
 public class CentralDeAbasto {
 	
+	private String id;
+	
 	/**
 	 * Nombre de la central de abasto
 	 */
@@ -16,8 +18,19 @@ public class CentralDeAbasto {
 	 * Metodo constructor de la clase
 	 */
 	public CentralDeAbasto() {
+		this.id = "";
 		this.nombre = "";
 		this.codigo = "";
+	}
+	
+	/**
+	 * Método para asignación de valor al atributo id.
+	 * @pId : parámetro con el valor a asignar. Debe verificar que sea una cadena no vacía.
+	 */
+	public void setId(String pId) {
+		if (pId.length() > 0) {
+			this.id = pId;
+		}
 	}
 	
 	/**
@@ -28,6 +41,13 @@ public class CentralDeAbasto {
 		if (pNombre.length() > 0) {
 			this.nombre = pNombre;
 		}
+	}
+	
+	/**
+	 * Método para obtener el valor del atributo id.
+	 */
+	public String getId() {
+		return this.id;
 	}
 	
 	/**

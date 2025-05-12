@@ -22,7 +22,6 @@ public class Main {
 		
 		presentacion = new Presentacion();
 		
-		presentacion.presentarDepartamento(departamento);
 	}
 
 	public static void registrarMunicipio() {

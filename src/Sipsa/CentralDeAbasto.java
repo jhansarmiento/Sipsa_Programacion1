@@ -56,7 +56,7 @@ public class CentralDeAbasto {
 	 */
 	public void setCodigo(String pCodigo) {
 		if (pCodigo.length() > 0) {
-			this.nombre = pCodigo;
+			this.codigo = pCodigo;
 		}
 	}
 	

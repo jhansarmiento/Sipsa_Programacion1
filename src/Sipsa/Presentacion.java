@@ -8,6 +8,11 @@ public class Presentacion extends PresentacionConsola {
 		this.rotuloSegundoNivel = "Registro de precios en centrales de abasto";
 	}
 	
+	/**
+	 * Metodos para la captura de los argumentos de las clases
+	 * @return
+	 */
+	
 	public Departamento capturarDepartamento() {
 		this.rotuloPrimerNivel = "Captura De Datos Del Departamento";
 		
@@ -20,6 +25,7 @@ public class Presentacion extends PresentacionConsola {
 		return rDepartamento;
 	}
 	
+	
 	public Municipio capturarMunicipio() {
 		this.rotuloTercerNivel = "Captura De Datos Del Municipio";
 		Municipio rMunicipio;
@@ -29,6 +35,35 @@ public class Presentacion extends PresentacionConsola {
 		rMunicipio.setNombre(this.desplegarCapturaString("Nombre del municipio: ", true));
 		return rMunicipio;
 	}
+	
+	/**
+	 * Metodos para capturar los atributos utilizados como llaves primarias
+	 * para recuperar los objetos instanciados de cada clase
+	 * @return
+	 */
+	
+	public String capturarCodigoDaneMunicipio() {
+		String rCodigoDane;
+		this.rotuloTercerNivel = "Consulta del municipio";
+		this.vaciarContenido();
+		rCodigoDane = this.desplegarCapturaString("Código DANE del municipio: ", false);
+		return rCodigoDane;
+	}
+	
+	public String capturarCodigoDaneDepartamento() {
+		String rCodigoDane;
+		this.rotuloTercerNivel = "Consulta de departamento";
+		this.vaciarContenido();
+		
+		rCodigoDane = this.desplegarCapturaString("Código DANE del departamento: ", false);
+		return rCodigoDane;
+	}
+	
+	/**
+	 * Metodos para presentar los objetos de cada clases
+	 * @param pDepartamento
+	 */
+	
 	
 	public void presentarDepartamento(Departamento pDepartamento) {
 		this.rotuloTercerNivel = "Presentación De Datos Del Departamento";

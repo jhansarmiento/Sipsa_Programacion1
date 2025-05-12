@@ -13,3 +13,7 @@ target/
 .settings/
 *.iml
 .idea/
+
+
+._.DS_Store
+**/.DS_Store

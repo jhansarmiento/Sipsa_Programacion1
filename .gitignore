@@ -1,0 +1,15 @@
+# Archivos compilados de Java
+*.class
+
+# Carpetas de salida de compilación (ajusta según tu proyecto)
+bin/
+build/
+out/
+target/
+
+# Archivos de IDE (ejemplos, añade los específicos de Eclipse si es necesario)
+.project
+.classpath
+.settings/
+*.iml
+.idea/
